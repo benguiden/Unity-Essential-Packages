@@ -3,9 +3,14 @@
 public class ThirdPersonOrbitController : MonoBehaviour {
 
 	#region Public Variables
-	//Camera
-	public Transform lookCamera;
+	public bool isPaused = false;
 
+	//Camera Look
+	public Transform lookCamera;
+	public Vector3 lookOffset;
+
+	//Input
+	public string lookHorizontalInput, lookVerticalInput;
 
 	#endregion
 
@@ -24,6 +29,12 @@ public class ThirdPersonOrbitController : MonoBehaviour {
 				Debug.Break ();
 			}
 		}
+	}
+	#endregion
+
+	#region Enums
+	public enum State{
+
 	}
 	#endregion
 
